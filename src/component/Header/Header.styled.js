@@ -4,8 +4,8 @@ const Header = styled.header`
   display: flex;
   width: 100%;
   height: 64px;
-  background-color: black;
-  color: white;
+  background-color: #212121;
+  color: #ffffff;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -14,6 +14,10 @@ const Header = styled.header`
   & div {
     cursor: pointer;
     font-size: large;
+  }
+  & div:hover {
+    transform: translateY(-20%);
+    transition: all 0.7s;
   }
 `;
 

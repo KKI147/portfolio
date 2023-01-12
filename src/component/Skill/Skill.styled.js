@@ -4,7 +4,7 @@ export const Body = styled.div`
   width: 100%;
   height: calc(100vh - 64px);
   margin-top: 64px;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   display: flex;
   justify-content: center;
   & div {
@@ -12,14 +12,11 @@ export const Body = styled.div`
   }
 `;
 
-export const Title = styled.div`
+export const Title = styled.h2`
   width: 100px;
   text-align: center;
-  background-color: gray;
-  border-radius: 12px;
   margin-bottom: 10rem;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 50px;
 `;
 
 export const SkillComponent = styled.span`
