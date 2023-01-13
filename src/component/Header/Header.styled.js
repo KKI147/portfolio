@@ -16,8 +16,9 @@ const Header = styled.header`
     font-size: large;
   }
   & div:hover {
-    transform: translateY(-20%);
-    transition: all 0.7s;
+    /* transform: translateY(-20%);
+    transition: all 0.7s; */
+    color: #cbc3e3;
   }
 `;
 

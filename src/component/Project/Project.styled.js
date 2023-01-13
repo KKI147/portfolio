@@ -1,19 +1,47 @@
 import styled from "styled-components";
 
-export const Body = styled.div`
+export const Section = styled.section`
+  display: flex;
   width: 100%;
-  height: calc(100vh - 64px);
-  margin-top: 64px;
+  height: 100vh;
   background-color: #f5f5f5;
-  align-items: center;
+`;
+
+export const Wrapper = styled.div`
+  margin: 64px 360px 0 360px;
+  & div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  height: 800px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* 스크롤바 막대 설정*/
+  ::-webkit-scrollbar-thumb {
+    background-color: ${(props) => props.theme.borderBottom};
+    border-radius: 6px;
+  }
+
+  /* 스크롤바 뒷 배경 설정*/
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 6px;
+  }
 `;
 
 export const Title = styled.h2`
-  position: relative;
-  top: 5%;
+  margin-bottom: 2rem;
   font-size: 50px;
-  display: flex;
-  justify-content: center;
+`;
+
+export const ImgBox = styled.div`
+  margin-bottom: 2rem;
+  height: 300px;
 `;
 
 export const ImgComponent = styled.img`
@@ -26,25 +54,35 @@ export const ImgComponent = styled.img`
   background-position: center;
 `;
 
-export const ImgBox = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-  gap: 100px;
-`;
+export const Content = styled.span`
+  width: 1000px;
+  height: 200px;
+  margin-left: 2rem;
+  /* width: 300px; */
 
-export const Content = styled.div`
-  width: 300px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #f5f5f5;
-  & h3 {
+  /* justify-content: center; */
+
+  & span {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    line-height: 30px;
+  }
+  /* & h3 {
     width: 300px;
   }
   & h4 {
     width: 300px;
-  }
-  & li {
+  } */
+  /* & li {
     line-height: 2rem;
-  }
+  } */
+`;
+export const Stack = styled.span`
+  width: max-content;
+  border-radius: 24px;
+  background-color: #d3d3d3;
+  margin: 0px 5px;
+  padding: 0px 2px;
 `;

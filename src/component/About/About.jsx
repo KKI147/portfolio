@@ -1,8 +1,7 @@
 import {
-  Body,
-  ImgComponent,
+  Section,
   Title,
-  Wraper,
+  Wrapper,
   Name,
   Email,
   Address,
@@ -12,9 +11,8 @@ import {
 
 function About() {
   return (
-    <Body>
-      <ImgComponent src={process.env.PUBLIC_URL + "/img/about.webp"} />
-      <Wraper>
+    <Section>
+      <Wrapper>
         <Title>About</Title>
         <div>
           <Name />
@@ -29,17 +27,23 @@ function About() {
           <span>rla123dlf@gmail.com</span>
         </div>
         <div>
-          <Address /> <span>서울특별시 구로구</span>
+          <Address />
+          <span>서울특별시 구로구</span>
         </div>
         <div>
           <Education />
-          <span>
-            <li>2010 - 2016 건국대학교(글로컬) 경영학과 졸업</li>
-            <li>2022 - 10 ~ 12스파르타코딩클럽 항해99 9기 수료</li>
-          </span>
+          <ul>
+            <li>2010.03 ~ 2016.02 입학</li>
+            <li>군대</li>
+            <li>2010.03 ~ 2016.02 건국대학교(글로컬) 경영학과 졸업</li>
+            <li>
+              <span>2022.10 ~ 12</span>
+              <span>스파르타코딩클럽 항해99 9기 수료</span>
+            </li>
+          </ul>
         </div>
-      </Wraper>
-    </Body>
+      </Wrapper>
+    </Section>
   );
 }
 

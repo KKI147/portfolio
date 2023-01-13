@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const Body = styled.div`
   width: 100%;
-  height: calc(100vh - 64px);
-  margin-top: 64px;
-  background-color: #f5f5f5;
+  height: 100vh;
+  background-color: #f5feff;
   display: flex;
   justify-content: center;
   & div {

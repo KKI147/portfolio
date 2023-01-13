@@ -21,11 +21,11 @@ function App() {
       <Swiper
         direction={"vertical"}
         slidesPerView={1}
-        spaceBetween={30}
         mousewheel={true}
         pagination={{
           clickable: true,
         }}
+        speed={1000}
         navigation={true}
         onSwiper={(swiper) => setSwiper(swiper)}
         modules={[Mousewheel, Pagination]}
