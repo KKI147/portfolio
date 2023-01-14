@@ -14,13 +14,20 @@ export const Section = styled.section`
 
 export const Wrapper = styled.div`
   margin: 64px 360px 0 360px;
-  & div {
+  /* & div {
     display: flex;
-    align-items: center;
     margin-bottom: 30px;
-  }
+  } */
+`;
+export const List = styled.div`
+  display: flex;
+  margin-bottom: 30px;
 `;
 
+export const EducationList = styled.div`
+  display: flex;
+  line-height: 20px;
+`;
 export const Title = styled.h2`
   margin-bottom: 2rem;
   font-size: 50px;
@@ -51,13 +58,13 @@ export const Address = styled(MdOutlineLocationOn)`
   margin-right: 1rem;
 `;
 
-export const Education = styled(TbSchool)`
+export const Birthday = styled(BiCake)`
   width: 20px;
   height: 20px;
   margin-right: 1rem;
 `;
 
-export const Birthday = styled(BiCake)`
+export const Education = styled(TbSchool)`
   width: 20px;
   height: 20px;
   margin-right: 1rem;

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./component/Header/Header";
 import Home from "./component/Home/Home";
 import About from "./component/About/About";
@@ -14,6 +14,13 @@ import "./styles.css";
 
 function App() {
   const [swiper, setSwiper] = useState(Swiper);
+  const [modal, setModal] = useState(false);
+
+  useEffect(() => {
+    if (swiper.mousewheel && modal) {
+      document.addEventListener("mousewheel", () => {});
+    }
+  }, [modal, swiper]);
 
   return (
     <>
@@ -22,9 +29,6 @@ function App() {
         direction={"vertical"}
         slidesPerView={1}
         mousewheel={true}
-        pagination={{
-          clickable: true,
-        }}
         speed={1000}
         navigation={true}
         onSwiper={(swiper) => setSwiper(swiper)}
@@ -41,7 +45,7 @@ function App() {
           <Skill />
         </SwiperSlide>
         <SwiperSlide>
-          <Project />
+          <Project modal={modal} setModal={setModal} />
         </SwiperSlide>
       </Swiper>
     </>
