@@ -74,7 +74,7 @@ function Project({ swiper }) {
             </Hover>
           </HoverBox>
           <HoverBox onClick={() => setModalFive(true)}>
-            <ImgComponent src={process.env.PUBLIC_URL + "/img/vongole.PNG"} />
+            <ImgComponent src={process.env.PUBLIC_URL + "/img/pote.PNG"} />
             <Hover>
               <div>Portfolio</div>
             </Hover>
