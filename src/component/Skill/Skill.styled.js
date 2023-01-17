@@ -1,26 +1,29 @@
 import styled from "styled-components";
 
-export const Body = styled.div`
+export const Section = styled.section`
+  display: flex;
   width: 100%;
   height: 100vh;
   background-color: #f5feff;
-  display: flex;
-  justify-content: center;
-  & div {
-    margin-top: 5rem;
-  }
+`;
+
+export const Wrapper = styled.div`
+  margin: 64px 360px 0 360px;
 `;
 
 export const Title = styled.h2`
-  width: 100px;
-  text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
   font-size: 50px;
 `;
 
-export const SkillComponent = styled.span`
+export const Box = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 50px;
+  margin: 1.5rem auto;
+  & div {
+    padding: 5px 20px;
+    color: #808080;
+  }
 `;
+
+export const SkillComponent = styled.div``;

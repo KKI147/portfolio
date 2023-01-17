@@ -1,32 +1,21 @@
 import styled from "styled-components";
-import { IoMailOutline } from "react-icons/io5";
-import { RiUser5Line } from "react-icons/ri";
-import { MdOutlineLocationOn } from "react-icons/md";
-import { TbSchool } from "react-icons/tb";
-import { BiCake } from "react-icons/bi";
 
 export const Section = styled.section`
   display: flex;
   width: 100%;
   height: 100vh;
   background-image: url("../../img/about_bg.svg");
+  @media screen and (max-width: 800px) {
+    justify-content: center;
+  }
 `;
 
 export const Wrapper = styled.div`
   margin: 64px 360px 0 360px;
-  /* & div {
-    display: flex;
-    margin-bottom: 30px;
-  } */
-`;
-export const List = styled.div`
-  display: flex;
-  margin-bottom: 30px;
 `;
 
 export const EducationList = styled.div`
-  display: flex;
-  line-height: 20px;
+  line-height: 30px;
 `;
 export const Title = styled.h2`
   margin-bottom: 2rem;
@@ -34,38 +23,12 @@ export const Title = styled.h2`
 `;
 
 export const Content = styled.div`
-  text-align: center;
-  background-color: #d3d3d3;
-  border-radius: 12px;
-  width: 150px;
+  padding-left: 20px;
+  margin-bottom: 2rem;
+  color: #808080;
 `;
 
-export const Name = styled(RiUser5Line)`
-  width: 20px;
-  height: 20px;
-  margin-right: 1rem;
-`;
-
-export const Email = styled(IoMailOutline)`
-  width: 20px;
-  height: 20px;
-  margin-right: 1rem;
-`;
-
-export const Address = styled(MdOutlineLocationOn)`
-  width: 20px;
-  height: 20px;
-  margin-right: 1rem;
-`;
-
-export const Birthday = styled(BiCake)`
-  width: 20px;
-  height: 20px;
-  margin-right: 1rem;
-`;
-
-export const Education = styled(TbSchool)`
-  width: 20px;
-  height: 20px;
-  margin-right: 1rem;
+export const Tag = styled.div`
+  font-size: 24px;
+  margin-bottom: 1rem;
 `;

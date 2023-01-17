@@ -2,13 +2,9 @@ import {
   Section,
   Title,
   Wrapper,
-  Name,
-  Email,
-  Address,
-  Education,
-  Birthday,
-  List,
   EducationList,
+  Tag,
+  Content,
 } from "./About.styled";
 
 function About() {
@@ -16,31 +12,40 @@ function About() {
     <Section>
       <Wrapper>
         <Title>About</Title>
-        <List>
-          <Name />
-          <span>김 경 일</span>
-        </List>
-        <List>
-          <Birthday />
-          <span>1991. 10. 24</span>
-        </List>
-        <List>
-          <Email />
-          <span>rla123dlf@gmail.com</span>
-        </List>
-        <List>
-          <Address />
-          <span>서울특별시 구로구</span>
-        </List>
-        <EducationList>
-          <Education />
-          <div>
-            <div>2010.03 ~ 2016.02 입학</div>
-            <div>군대</div>
-            <div>2010.03 ~ 2016.02 건국대학교(글로컬) 경영학과 졸업</div>
-            <div>2022.10 ~ 12 스파르타코딩클럽 항해99 9기 수료</div>
-          </div>
-        </EducationList>
+        <div>
+          <Tag>• Name</Tag>
+          <Content>Kim kyeong il</Content>
+        </div>
+        <div>
+          <Tag>• Role</Tag>
+          <Content>Fe(Front-End Developer)</Content>
+        </div>
+        <div>
+          <Tag>• Birthday</Tag>
+          <Content>1991. 10. 24</Content>
+        </div>
+        <div>
+          <Tag>• Email</Tag>
+          <Content>rla123dlf@gmail.com</Content>
+        </div>
+        <div>
+          <Tag>• Education</Tag>
+          <Content>
+            <EducationList>
+              <div>- 2010. 03 ~ 2016. 02 건국대학교(글로컬) 경영학과 입학</div>
+              <div>- 군대</div>
+              <div>- 2010. 03 ~ 2016. 02 졸업</div>
+              <div>- 2022. 09 스파르타코딩클럽 항해99 9기 참가</div>
+              <div>- 2022. 10 풀스택 미니 프로젝트(협업), (1주)</div>
+              <div>- 2022. 10 알고리즘 기초 (1주)</div>
+              <div>- 2022. 10 ~ 11 React 기본/심화 (3주)</div>
+              <div>- 2022. 11 미니 프로젝트(협업), (1주)</div>
+              <div>- 2022. 11 클론코딩(협업), (1주)</div>
+              <div>- 2022. 12 실전 프로젝트(협업), (5주)</div>
+              <div>- 2022. 12 스파르타코딩클럽 항해99 9기 수료</div>
+            </EducationList>
+          </Content>
+        </div>
       </Wrapper>
     </Section>
   );

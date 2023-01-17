@@ -31,7 +31,7 @@ export const HoverBox = styled.span`
   cursor: pointer;
   transition: all 0.5s ease;
   &:hover {
-    transform: translateY(-0.5rem);
+    transform: translateY(-1.5rem);
   }
 `;
 export const ImgComponent = styled.img`
@@ -100,15 +100,6 @@ export const Content = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* & button {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-  } */
 `;
 
 export const Box = styled.div`
@@ -119,8 +110,6 @@ export const Box = styled.div`
 
 export const SubTitle = styled.div`
   font-size: 24px;
-  /* margin-right: 1rem;
-  margin-bottom: 1rem; */
   margin: 10px 0px;
   font-weight: bold;
 `;
@@ -136,21 +125,13 @@ export const StackBox = styled.div`
   display: flex;
 `;
 
-export const TecBox = styled.div`
-  /* display: flex; */
-  /* margin: 15px 15px; */
-`;
-
 export const TecTitle = styled.div`
-  /* display: flex; */
   font-size: 24px;
-  /* margin-right: 1rem;
-  margin-bottom: 1rem; */
   font-weight: bold;
 `;
 
 export const Text = styled.div`
-  color: #8888;
+  color: #808080;
   & div {
     line-height: 30px;
   }

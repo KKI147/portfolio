@@ -30,7 +30,7 @@ function Footer() {
           onClick={velog}
           src={process.env.PUBLIC_URL + "/icon/velog.svg"}
         />
-        <div>© Copyright 2023. Made by Kim kyeongill</div>
+        <div>© Copyright 2023. Made by Kim kyeong il</div>
       </span>
     </FooterComponent>
   );

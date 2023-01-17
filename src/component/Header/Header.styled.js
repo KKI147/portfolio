@@ -11,13 +11,16 @@ const Header = styled.header`
   position: fixed;
   gap: 100px;
   z-index: 2;
+  @media screen and (max-width: 1280px) {
+    gap: 20px;
+    padding: 10px 10px;
+    height: fit-content;
+  }
   & div {
     cursor: pointer;
     font-size: large;
   }
   & div:hover {
-    /* transform: translateY(-20%);
-    transition: all 0.7s; */
     color: #cbc3e3;
   }
 `;

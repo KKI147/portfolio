@@ -30,4 +30,8 @@ export const ImgComponent = styled.img`
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
 `;

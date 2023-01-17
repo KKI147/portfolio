@@ -14,13 +14,13 @@ import "./styles.css";
 
 function App() {
   const [swiper, setSwiper] = useState(Swiper);
-  const [modal, setModal] = useState(false);
+  // const [modal, setModal] = useState(false);
 
-  useEffect(() => {
-    if (swiper.mousewheel && modal) {
-      document.addEventListener("mousewheel", () => {});
-    }
-  }, [modal, swiper]);
+  // useEffect(() => {
+  //   if (swiper.mousewheel && modal) {
+  //     document.addEventListener("mousewheel", () => {});
+  //   }
+  // }, [modal, swiper]);
 
   return (
     <>
@@ -45,7 +45,7 @@ function App() {
           <Skill />
         </SwiperSlide>
         <SwiperSlide>
-          <Project modal={modal} setModal={setModal} />
+          <Project swiper={swiper} />
         </SwiperSlide>
       </Swiper>
     </>
