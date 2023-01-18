@@ -1,6 +1,8 @@
 import { Section, Title, SubTitle, ImgComponent } from "./Home.styled";
 
 function Home() {
+  // 1280px, 768px, 480px
+  // px , rem, em, % 조정 ?
   return (
     <Section>
       <Title>경청하는 프론트엔드 개발자 김경일입니다.</Title>

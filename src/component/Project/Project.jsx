@@ -19,13 +19,16 @@ import {
 } from "../Project/Project.styled";
 import Footer from "../Footer/Footer";
 import { useState, useEffect } from "react";
+import Modal from "../Modal/Modal";
 
-function Project({ swiper }) {
-  const [modalOne, setModalOne] = useState(false);
-  const [modalTwo, setModalTwo] = useState(false);
-  const [modalThree, setModalThree] = useState(false);
-  const [modalFour, setModalFour] = useState(false);
-  const [modalFive, setModalFive] = useState(false);
+function Project() {
+  const [isOpen, setIsOpen] = useState(false);
+  const type = ["vongole", "velog", "velly", "todo", "pote"];
+
+  const modalOpen = () => {
+    setIsOpen(!isOpen);
+  };
+  const Name = ["Vongole", "Vellog", "Vall of race", "My todo", "Portfolio"];
   /**
    * layout: 가로
    * Project Name: vall of race
@@ -35,45 +38,45 @@ function Project({ swiper }) {
    * Tec,:
    */
 
-  console.log(swiper.activeIndex);
+  // useEffect(() => {
+  //   if (swiper.activeIndex === 3) {
+  //     setModalOne(false);
+  //     console.log("실행");
+  //   }
+  // }, [swiper.activeIndex]);
 
-  useEffect(() => {
-    if (swiper.activeIndex === 3) {
-      setModalOne(false);
-      console.log("실행");
-    }
-  }, [swiper.activeIndex]);
+  // useEffect(() => {}, []);
 
   return (
     <Section>
       <Wrapper>
         <Title>Project</Title>
         <ImgBox>
-          <HoverBox onClick={() => setModalOne(true)}>
+          <HoverBox type="vongole" onClick={modalOpen}>
             <ImgComponent src={process.env.PUBLIC_URL + "/img/vongole.PNG"} />
             <Hover>
               <div>Vongole</div>
             </Hover>
           </HoverBox>
-          <HoverBox onClick={() => setModalTwo(true)}>
+          <HoverBox type="vellog" onClick={modalOpen}>
             <ImgComponent src={process.env.PUBLIC_URL + "/img/velog.PNG"} />
             <Hover>
               <div>Velog</div>
             </Hover>
           </HoverBox>
-          <HoverBox onClick={() => setModalThree(true)}>
+          <HoverBox type="velly" onClick={modalOpen}>
             <ImgComponent src={process.env.PUBLIC_URL + "/img/velly.PNG"} />
             <Hover>
               <div>Vall of race</div>
             </Hover>
           </HoverBox>
-          <HoverBox onClick={() => setModalFour(true)}>
+          <HoverBox type="todo" onClick={modalOpen}>
             <ImgComponent src={process.env.PUBLIC_URL + "/img/todo.PNG"} />
             <Hover>
               <div>My todo</div>
             </Hover>
           </HoverBox>
-          <HoverBox onClick={() => setModalFive(true)}>
+          <HoverBox type="pote" onClick={modalOpen}>
             <ImgComponent src={process.env.PUBLIC_URL + "/img/pote.PNG"} />
             <Hover>
               <div>Portfolio</div>
@@ -83,8 +86,15 @@ function Project({ swiper }) {
       </Wrapper>
       <Footer />
 
-      {/* * Vongole* */}
-      {modalOne === false ? (
+      {isOpen === false ? (
+        ""
+      ) : (
+        <>
+          <Modal modalOpen={modalOpen} type={type} Name={Name} />
+        </>
+      )}
+
+      {/* {modalOne === false ? (
         ""
       ) : (
         <ModalBox>
@@ -132,50 +142,50 @@ function Project({ swiper }) {
         </ModalBox>
       )}
 
-      {/* * Velog* */}
+
       {modalTwo === false ? (
         ""
       ) : (
         <ModalBox>
-          <Content>
-            <ModalHead>
-              <ModalTitle>Velog</ModalTitle>
-              <ModalBtn onClick={() => setModalTwo(false)}>X</ModalBtn>
-            </ModalHead>
-            <Box>
-              <SubTitle>Stack</SubTitle>
-              <StackBox>
-                <Stack>HTML5</Stack>
-                <Stack>CSS3</Stack>
-                <Stack>JavaScript</Stack>
-                <Stack>ReactJS</Stack>
-                <Stack>React-Router</Stack>
-                <Stack>Redux-Thunk</Stack>
-                <Stack>styled-components</Stack>
-                <Stack>Axios</Stack>
-              </StackBox>
-            </Box>
-            <Box>
-              <SubTitle>Role</SubTitle>
-              <Text>- Front-end</Text>
-            </Box>
-            <Box>
-              <SubTitle>Description</SubTitle>
-              <Text>- 벨로그 클론코딩</Text>
-            </Box>
+         <Content>
+          <ModalHead>
+            <ModalTitle>Velog</ModalTitle>
+            <ModalBtn onClick={modalOpen}>X</ModalBtn>
+          </ModalHead>
+          <Box>
+            <SubTitle>Stack</SubTitle>
+            <StackBox>
+              <Stack>HTML5</Stack>
+              <Stack>CSS3</Stack>
+              <Stack>JavaScript</Stack>
+              <Stack>ReactJS</Stack>
+              <Stack>React-Router</Stack>
+              <Stack>Redux-Thunk</Stack>
+              <Stack>styled-components</Stack>
+              <Stack>Axios</Stack>
+            </StackBox>
+          </Box>
+          <Box>
+            <SubTitle>Role</SubTitle>
+            <Text>- Front-end</Text>
+          </Box>
+          <Box>
+            <SubTitle>Description</SubTitle>
+            <Text>- 벨로그 클론코딩</Text>
+          </Box>
 
-            <SubTitle>Tec</SubTitle>
-            <Text>
-              <div>- Toast editor를 이용한 게시글 마크다운 문법적용 개발</div>
-              <div>- Axios를 통한 게시글 CRUD 기능 구현</div>
-              <div>- Form data를 활용 이미지 미리보기 및 업로드 구현</div>
-              <div>- css를 활용한 Nav-bar 구현</div>
-            </Text>
-          </Content>
+          <SubTitle>Tec</SubTitle>
+          <Text>
+            <div>- Toast editor를 이용한 게시글 마크다운 문법적용 개발</div>
+            <div>- Axios를 통한 게시글 CRUD 기능 구현</div>
+            <div>- Form data를 활용 이미지 미리보기 및 업로드 구현</div>
+            <div>- css를 활용한 Nav-bar 구현</div>
+          </Text>
+        </Content>
         </ModalBox>
       )}
 
-      {/* * Velly* */}
+
       {modalThree === false ? (
         ""
       ) : (
@@ -218,7 +228,7 @@ function Project({ swiper }) {
         </ModalBox>
       )}
 
-      {/* * Todo* */}
+
       {modalFour === false ? (
         ""
       ) : (
@@ -255,14 +265,14 @@ function Project({ swiper }) {
         </ModalBox>
       )}
 
-      {/* * Pote* */}
+
       {modalFive === false ? (
         ""
       ) : (
         <ModalBox>
           <Content>
             <ModalHead>
-              <ModalTitle>Vongole</ModalTitle>
+              <ModalTitle>Portfolio</ModalTitle>
               <ModalBtn onClick={() => setModalFive(false)}>X</ModalBtn>
             </ModalHead>
             <Box>
@@ -292,7 +302,7 @@ function Project({ swiper }) {
             </Text>
           </Content>
         </ModalBox>
-      )}
+      )} */}
     </Section>
   );
 }
