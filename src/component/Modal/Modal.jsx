@@ -37,48 +37,29 @@ import {
 //   zIndex: "888",
 // };
 
-const Modal = ({ children, modalOpen, type, Name }) => {
+const Modal = ({ children, modalOpen, type, Vongole, Vellog }) => {
+  console.log(Vongole);
+  console.log(Vellog);
+  console.log(type);
   return ReactDOM.createPortal(
     <ModalBox>
       <Content>
         <ModalHead>
-          <ModalTitle>{Name[0]}</ModalTitle>
+          <ModalTitle>{Vongole.name}</ModalTitle>
           <ModalBtn onClick={() => modalOpen(false)}>X</ModalBtn>
         </ModalHead>
         <Box>
           <SubTitle>Stack</SubTitle>
-          <StackBox>
-            {/* <Stack>HTML5</Stack>
-                <Stack>CSS3</Stack>
-                <Stack>JavaScript</Stack>
-                <Stack>ReactJS</Stack>
-                <Stack>React-Router</Stack>
-                <Stack>Redux-Thunk</Stack>
-                <Stack>styled-components</Stack>
-                <Stack>Axios</Stack> */}
-          </StackBox>
+          <StackBox>{Vongole.stack}</StackBox>
         </Box>
         <Box>
-          <SubTitle>Role</SubTitle>
-          {/* <Text>- Front-end</Text> */}
+          <SubTitle>Role</SubTitle>- {Vongole.role}
         </Box>
         <Box>
-          <SubTitle>Description</SubTitle>
-          {/* <Text>- 봉사활동 매칭 서비스</Text> */}
+          <SubTitle>Description</SubTitle>- {Vongole.descrition}
         </Box>
         <SubTitle>Tec</SubTitle>
-        <Text>
-          {/* <div>- Axios를 통한 게시판 댓글 CRUD 기능 구현</div>
-              <div>
-                - Kakao Map API를 통해 우편주소값을 통한 Kakao Map 특정지역
-                Marker 표기 개발
-              </div>
-              <div>
-                - React-Calendar를 사용한 달력 구현, BE 통신 후 월별 봉사일정 및
-                개인 봉사일정 Calendar 표기 구현
-              </div>
-              <div>- Fimga Design File {">"} HTML, CSS Publishing</div> */}
-        </Text>
+        <Text>{Vongole.tec}</Text>
       </Content>
     </ModalBox>,
     document.getElementById("modal")
