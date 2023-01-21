@@ -1,4 +1,5 @@
 import styled from "styled-components";
+//1280px, 768px, 480px
 
 export const Section = styled.section`
   width: 100%;
@@ -8,6 +9,9 @@ export const Section = styled.section`
 
 export const Wrapper = styled.div`
   margin: 64px 360px 0 360px;
+  @media screen and (max-width: 1280px) {
+    margin: 64px 64px;
+  }
 `;
 
 export const Title = styled.h2`
