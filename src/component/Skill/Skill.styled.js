@@ -38,4 +38,15 @@ export const Box = styled.div`
       font-size: 18px;
     }
   }
+  @media screen and (max-width: 768px) {
+    margin: 15px auto;
+    & div {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+    & img {
+      width: 25px;
+      height: 25px;
+    }
+  }
 `;
