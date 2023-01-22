@@ -2,6 +2,7 @@ import styled from "styled-components";
 //1280px, 768px, 480px
 
 export const Section = styled.section`
+  display: flex;
   width: 100%;
   height: 100vh;
   background-color: #f5f5f5;
@@ -9,6 +10,9 @@ export const Section = styled.section`
 
 export const Wrapper = styled.div`
   margin: 64px 360px 0 360px;
+  @media screen and (max-width: 1700px) {
+    margin: 64px 64px;
+  }
   @media screen and (max-width: 1280px) {
     margin: 64px 64px;
   }
@@ -21,13 +25,27 @@ export const Title = styled.h2`
 
 export const ImgBox = styled.div`
   display: flex;
-  align-items: center;
   margin-bottom: 30px;
   justify-content: center;
   flex-wrap: wrap;
   gap: 100px;
-  margin-bottom: 2rem;
   height: 300px;
+  @media screen and (max-width: 1700px) {
+    margin: 0px 120px;
+    gap: 100px;
+  }
+  @media screen and (max-width: 1280px) {
+    margin: 0px 120px;
+    gap: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0px 120px;
+    gap: 50px;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 0px 120px;
+    gap: 50px;
+  }
 `;
 
 export const HoverBox = styled.span`
@@ -46,6 +64,18 @@ export const ImgComponent = styled.img`
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
+  @media screen and (max-width: 1700px) {
+    width: 300px;
+    height: 200px;
+  }
+  @media screen and (max-width: 1500px) {
+    width: 300px;
+    height: 150px;
+  }
+  @media screen and (max-width: 1100px) {
+    width: 250px;
+    height: 150px;
+  }
 `;
 
 export const Hover = styled.div`
@@ -65,6 +95,19 @@ export const Hover = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-width: 1800px) {
+    width: 300px;
+    height: 200px;
+  }
+  @media screen and (max-width: 1500px) {
+    width: 300px;
+    height: 150px;
+  }
+  @media screen and (max-width: 1100px) {
+    width: 250px;
+    height: 150px;
   }
 `;
 

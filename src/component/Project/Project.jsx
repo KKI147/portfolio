@@ -20,70 +20,17 @@ import {
 import Footer from "../Footer/Footer";
 import { useState, useEffect } from "react";
 import Modal from "../Modal/Modal";
+import { Vongole, Velog } from "../Modal/Modul";
+
+let childrenNode;
 
 function Project() {
+  const [project, setProject] = useState();
   const [isOpen, setIsOpen] = useState(false);
-  const type = ["vongole", "velog", "velly", "todo", "pote"];
 
-  const modalOpen = () => {
+  const modalOpen = (value) => {
+    setProject(value);
     setIsOpen(!isOpen);
-  };
-  const Vongole = {
-    name: "Vongole",
-    stack: (
-      <>
-        <Stack>HTML5</Stack>
-        <Stack>CSS3</Stack>
-        <Stack>JavaScript</Stack>
-        <Stack>ReactJS</Stack>
-        <Stack>React-Router</Stack>
-        <Stack>Redux-Thunk</Stack>
-        <Stack>styled-components</Stack>
-        <Stack>Axios</Stack>
-      </>
-    ),
-    role: "Front-end",
-    descrition: "봉사활동 매칭 서비스",
-    tec: (
-      <>
-        <div>- Axios를 통한 게시판 댓글 CRUD 기능 구현</div>
-        <div>
-          - Kakao Map API를 통해 우편주소값을 통한 Kakao Map 특정지역 Marker
-          표기 개발
-        </div>
-        <div>
-          - React-Calendar를 사용한 달력 구현, BE 통신 후 월별 봉사일정 및 개인
-          봉사일정 Calendar 표기 구현
-        </div>
-        <div>- Fimga Design File {">"} HTML, CSS Publishing</div>
-      </>
-    ),
-  };
-
-  const Vellog = {
-    name: "Velog",
-    stack: (
-      <>
-        <Stack>HTML5</Stack>
-        <Stack>CSS3</Stack>
-        <Stack>JavaScript</Stack>
-        <Stack>ReactJS</Stack>
-        <Stack>React-Router</Stack>
-        <Stack>Redux-Thunk</Stack>
-        <Stack>styled-components</Stack>
-        <Stack>Axios</Stack>
-      </>
-    ),
-    role: "Front-end",
-    descrition: "벨로그 클론코딩",
-    tec: (
-      <>
-        <div>- Toast editor를 이용한 게시글 마크다운 문법적용 개발</div>
-        <div>- Axios를 통한 게시글 CRUD 기능 구현</div>
-        <div>- Form data를 활용 이미지 미리보기 및 업로드 구현</div>
-        <div>- css를 활용한 Nav-bar 구현</div>
-      </>
-    ),
   };
   /**
    * layout: 가로
@@ -94,45 +41,36 @@ function Project() {
    * Tec,:
    */
 
-  // useEffect(() => {
-  //   if (swiper.activeIndex === 3) {
-  //     setModalOne(false);
-  //     console.log("실행");
-  //   }
-  // }, [swiper.activeIndex]);
-
-  // useEffect(() => {}, []);
-
   return (
     <Section>
       <Wrapper>
         <Title>Project</Title>
         <ImgBox>
-          <HoverBox type="vongole" onClick={modalOpen}>
+          <HoverBox onClick={() => modalOpen("vongole")}>
             <ImgComponent src={process.env.PUBLIC_URL + "/img/vongole.PNG"} />
             <Hover>
               <div>Vongole</div>
             </Hover>
           </HoverBox>
-          <HoverBox type="vellog" onClick={modalOpen}>
+          <HoverBox onClick={() => modalOpen("velog")}>
             <ImgComponent src={process.env.PUBLIC_URL + "/img/velog.PNG"} />
             <Hover>
               <div>Velog</div>
             </Hover>
           </HoverBox>
-          <HoverBox type="velly" onClick={modalOpen}>
+          <HoverBox onClick={() => modalOpen("velly")}>
             <ImgComponent src={process.env.PUBLIC_URL + "/img/velly.PNG"} />
             <Hover>
               <div>Vall of race</div>
             </Hover>
           </HoverBox>
-          <HoverBox type="todo" onClick={modalOpen}>
+          <HoverBox onClick={() => modalOpen("todo")}>
             <ImgComponent src={process.env.PUBLIC_URL + "/img/todo.PNG"} />
             <Hover>
               <div>My todo</div>
             </Hover>
           </HoverBox>
-          <HoverBox type="pote" onClick={modalOpen}>
+          <HoverBox onClick={() => modalOpen("portfolio")}>
             <ImgComponent src={process.env.PUBLIC_URL + "/img/pote.PNG"} />
             <Hover>
               <div>Portfolio</div>
@@ -142,17 +80,16 @@ function Project() {
       </Wrapper>
       <Footer />
 
-      {isOpen === false ? (
-        ""
+      {isOpen ? (
+        <Modal>
+          {project === "vongole" ? <Vongole setIsOpen={setIsOpen} /> : ""}
+          {project === "velog" ? <Velog setIsOpen={setIsOpen} /> : ""}
+          {project === "velly" ? <Velog setIsOpen={setIsOpen} /> : ""}
+          {project === "todo" ? <Vongole setIsOpen={setIsOpen} /> : ""}
+          {project === "portfolio" ? <Vongole setIsOpen={setIsOpen} /> : ""}
+        </Modal>
       ) : (
-        <>
-          <Modal
-            modalOpen={modalOpen}
-            type={type}
-            Vongole={Vongole}
-            Vellog={Vellog}
-          />
-        </>
+        ""
       )}
 
       {/* {modalOne === false ? (
