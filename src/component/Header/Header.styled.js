@@ -1,4 +1,5 @@
 import styled from "styled-components";
+//1280px, 768px, 480px
 
 const Header = styled.header`
   display: flex;
@@ -11,17 +12,28 @@ const Header = styled.header`
   position: fixed;
   gap: 100px;
   z-index: 2;
-  @media screen and (max-width: 1280px) {
-    gap: 20px;
-    padding: 10px 10px;
-    height: fit-content;
-  }
+
   & div {
     cursor: pointer;
-    font-size: large;
+    font-size: 2rem;
   }
   & div:hover {
     color: #cbc3e3;
+  }
+
+  @media screen and (max-width: 1280px) {
+    height: 58px;
+
+    & div {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 480px) {
+    gap: 20px;
   }
 `;
 

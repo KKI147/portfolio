@@ -5,13 +5,13 @@ export const Section = styled.section`
   width: 100%;
   height: 100vh;
   background-image: url("../../img/about_bg.svg");
-  @media screen and (max-width: 800px) {
-    justify-content: center;
-  }
 `;
 
 export const Wrapper = styled.div`
   margin: 64px 360px 0 360px;
+  @media screen and (max-width: 1280px) {
+    margin: 64px 64px;
+  }
 `;
 
 export const EducationList = styled.div`
@@ -26,6 +26,9 @@ export const Content = styled.div`
   padding-left: 20px;
   margin-bottom: 2rem;
   color: #808080;
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
 `;
 
 export const Tag = styled.div`

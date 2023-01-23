@@ -1,4 +1,5 @@
 import styled from "styled-components";
+//1280px, 768px, 480px
 
 export const Section = styled.section`
   display: flex;
@@ -9,6 +10,12 @@ export const Section = styled.section`
 
 export const Wrapper = styled.div`
   margin: 64px 360px 0 360px;
+  @media screen and (max-width: 1550px) {
+    margin: 64px 64px;
+  }
+  @media screen and (max-width: 1280px) {
+    margin: 64px 64px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -24,6 +31,22 @@ export const Box = styled.div`
     padding: 5px 20px;
     color: #808080;
   }
+  @media screen and (max-width: 1280px) {
+    margin: 15px auto;
+    & div {
+      padding: 5px 10px;
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin: 15px auto;
+    & div {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+    & img {
+      width: 25px;
+      height: 25px;
+    }
+  }
 `;
-
-export const SkillComponent = styled.div``;

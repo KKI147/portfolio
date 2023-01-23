@@ -1,4 +1,5 @@
 import styled from "styled-components";
+//1280px, 768px, 480px
 
 export const Section = styled.section`
   width: 100%;
@@ -24,10 +25,19 @@ export const Title = styled.div`
       transform: none;
     }
   }
-  @media screen and (max-width: 900px) {
-    left: 10%;
-    margin-bottom: 2.5rem;
-    word-break: keep-all;
+  @media screen and (max-width: 1280px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    right: 5%;
+    left: 5%;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 480px) {
+    right: 5%;
+    left: 5%;
+    margin-bottom: 20px;
   }
 `;
 
@@ -37,9 +47,22 @@ export const SubTitle = styled.div(
     right: "10%",
     color: "#888888",
     fontSize: "1.3rem",
-    "@media screen and (max-width: 900px)": {
-      marginBottom: "2.5rem",
+    "@media screen and (max-width: 1280px)": {
+      right: "10%",
       wordBreak: "keep-all",
+      marginTop: "10px",
+    },
+    "@media screen and (max-width: 768px)": {
+      right: "5%",
+      left: "5%",
+      wordBreak: "keep-all",
+      marginTop: "10px",
+    },
+    "@media screen and (max-width: 480px)": {
+      right: "5%",
+      left: "5%",
+      wordBreak: "keep-all",
+      marginTop: "20px",
     },
   },
 
@@ -58,7 +81,25 @@ export const ImgComponent = styled.img`
   bottom: 5%;
   left: 50%;
   filter: invert(80%);
-  @media screen and (max-width: 900px) {
+
+  @media screen and (max-width: 1280px) {
+    position: fixed;
+    margin: 2px auto;
+    bottom: 5%;
+    right: 5%;
+    left: 5%;
+  }
+
+  @media screen and (max-width: 768px) {
+    right: 5%;
+    left: 5%;
+    position: fixed;
+    margin: 2px auto;
+    bottom: 5%;
+  }
+  @media screen and (max-width: 480px) {
+    right: 5%;
+    left: 5%;
     position: fixed;
     margin: 2px auto;
     bottom: 5%;

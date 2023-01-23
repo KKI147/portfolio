@@ -13,6 +13,18 @@ export const FooterComponent = styled.footer`
     justify-content: center;
     gap: 100px;
     padding: 24px;
+    @media screen and (max-width: 1280px) {
+      gap: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+      gap: 20px;
+      font-size: 12px;
+    }
+    @media screen and (max-width: 480px) {
+      gap: 10px;
+      font-size: 12px;
+    }
   }
   & a {
     color: #ffffff;

@@ -21,6 +21,10 @@ export const Content = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media screen and (max-width: 1280px) {
+    width: 900px;
+    padding: 12px 24px;
+  }
 `;
 
 export const ModalHead = styled.div`
