@@ -1,8 +1,14 @@
 import ReactDOM from "react-dom";
-import {} from "./Modul.styled";
+import { Content, ModalBox } from "./Module.styled";
 
 const Modal = ({ children }) => {
-  return ReactDOM.createPortal(children, document.querySelector("#modal"));
+  return ReactDOM.createPortal(
+    <ModalBox>
+      <Content>{children}</Content>
+    </ModalBox>,
+
+    document.querySelector("#modal")
+  );
 };
 
 export default Modal;

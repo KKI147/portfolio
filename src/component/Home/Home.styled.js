@@ -26,18 +26,18 @@ export const Title = styled.div`
     }
   }
   @media screen and (max-width: 1280px) {
-    margin-bottom: 10px;
+    font-size: 2rem;
   }
 
   @media screen and (max-width: 768px) {
-    right: 5%;
-    left: 5%;
-    margin-bottom: 10px;
+    left: 20%;
+    top: 40%;
+    font-size: 1.5rem;
   }
   @media screen and (max-width: 480px) {
-    right: 5%;
-    left: 5%;
-    margin-bottom: 20px;
+    left: 10%;
+    top: 40%;
+    font-size: 1.5rem;
   }
 `;
 
@@ -50,19 +50,20 @@ export const SubTitle = styled.div(
     "@media screen and (max-width: 1280px)": {
       right: "10%",
       wordBreak: "keep-all",
-      marginTop: "10px",
+
+      fontSize: "1rem",
     },
     "@media screen and (max-width: 768px)": {
       right: "5%",
       left: "5%",
+      top: "45%",
       wordBreak: "keep-all",
-      marginTop: "10px",
     },
     "@media screen and (max-width: 480px)": {
       right: "5%",
       left: "5%",
+      top: "50%",
       wordBreak: "keep-all",
-      marginTop: "20px",
     },
   },
 

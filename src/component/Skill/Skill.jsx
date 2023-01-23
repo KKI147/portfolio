@@ -1,5 +1,4 @@
 import { Section, Wrapper, Title, Box } from "./Skill.styled";
-import { useEffect } from "react";
 
 function Skill() {
   return (

@@ -23,17 +23,21 @@ const Header = styled.header`
 
   @media screen and (max-width: 1280px) {
     height: 58px;
-
     & div {
       font-size: 1.5rem;
     }
   }
   @media screen and (max-width: 768px) {
     gap: 50px;
+    height: 48px;
+    & div {
+      font-size: 1rem;
+    }
   }
 
   @media screen and (max-width: 480px) {
     gap: 20px;
+    height: 38px;
   }
 `;
 
