@@ -16,11 +16,20 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 1280px) {
     margin: 64px 64px;
   }
+  @media screen and (max-width: 900px) {
+    margin: 64px 0 0 30px;
+  }
 `;
 
 export const Title = styled.h2`
   margin-bottom: 5rem;
   font-size: 50px;
+  @media screen and (max-width: 1280px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 
 export const ImgBox = styled.div`
@@ -76,6 +85,10 @@ export const ImgComponent = styled.img`
     width: 250px;
     height: 150px;
   }
+  @media screen and (max-width: 900px) {
+    width: 150px;
+    height: 100px;
+  }
 `;
 
 export const Hover = styled.div`
@@ -95,6 +108,18 @@ export const Hover = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media screen and (max-width: 1800px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 1500px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 1100px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 900px) {
+      font-size: 12px;
+    }
   }
 
   @media screen and (max-width: 1800px) {
@@ -108,6 +133,10 @@ export const Hover = styled.div`
   @media screen and (max-width: 1100px) {
     width: 250px;
     height: 150px;
+  }
+  @media screen and (max-width: 900px) {
+    width: 150px;
+    height: 100px;
   }
 `;
 
