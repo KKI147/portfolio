@@ -41,7 +41,7 @@ const Modal = ({ children, modalOpen, type, Vongole, Vellog }) => {
   console.log(Vongole);
   console.log(Vellog);
   console.log(type);
-  return ReactDOM.createPortal(
+  if (type === "vongole") {
     <ModalBox>
       <Content>
         <ModalHead>
@@ -61,9 +61,30 @@ const Modal = ({ children, modalOpen, type, Vongole, Vellog }) => {
         <SubTitle>Tec</SubTitle>
         <Text>{Vongole.tec}</Text>
       </Content>
-    </ModalBox>,
-    document.getElementById("modal")
-  );
+    </ModalBox>;
+  } else if (type === "velog") {
+    <ModalBox>
+      <Content>
+        <ModalHead>
+          <ModalTitle>2</ModalTitle>
+          <ModalBtn onClick={() => modalOpen(false)}>X</ModalBtn>
+        </ModalHead>
+        <Box>
+          <SubTitle>Stack</SubTitle>
+          <StackBox>{Vongole.stack}</StackBox>
+        </Box>
+        <Box>
+          <SubTitle>Role</SubTitle>- {Vongole.role}
+        </Box>
+        <Box>
+          <SubTitle>Description</SubTitle>- {Vongole.descrition}
+        </Box>
+        <SubTitle>Tec</SubTitle>
+        <Text>{Vongole.tec}</Text>
+      </Content>
+    </ModalBox>;
+  }
+  return ReactDOM.createPortal(<></>, document.getElementById("modal"));
 };
 
 export default Modal;
