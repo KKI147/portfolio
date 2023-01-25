@@ -61,7 +61,7 @@ function Skill() {
           <img src={process.env.PUBLIC_URL + "/icon/router.png"} alt="html" />
           <div>
             <div>- React-Router의 작동원리를 이해하고 있습니다.</div>
-            <div>- React-Router의 hook들을 이해하고 사용할수 있습니다..</div>
+            <div>- React-Router의 hook들을 이해하고 사용할수 있습니다.</div>
           </div>
         </Box>
         <Box>

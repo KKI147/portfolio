@@ -2,30 +2,33 @@ import styled from "styled-components";
 //1280px, 768px, 480px
 
 export const Section = styled.section`
-  display: flex;
   width: 100%;
   height: 100vh;
   background-image: url("../../img/about_bg.svg");
 `;
 
 export const Wrapper = styled.div`
-  margin: 64px 360px 0 360px;
+  padding-top: 100px;
+  margin: 0 20% 0 20%;
   @media screen and (max-width: 1280px) {
-    margin: 64px 250px 0 250px;
-    font-size: 1rem;
+    padding-top: 100px;
+    margin: 0 20% 0 30%;
   }
   @media screen and (max-width: 768px) {
-    margin: 64px 120px 0 200px;
-    font-size: 0.8rem;
+    padding-top: 100px;
+    margin: 0 20% 0 30%;
   }
   @media screen and (max-width: 480px) {
-    margin: 64px 50px 0 50px;
-    font-size: 25px;
+    padding-top: 100px;
+    margin: 0 20% 0 20%;
   }
 `;
 
 export const EducationList = styled.div`
   line-height: 30px;
+  @media screen and (max-width: 480px) {
+    word-break: keep-all;
+  }
 `;
 export const Title = styled.h2`
   margin-bottom: 2rem;
@@ -36,24 +39,37 @@ export const Title = styled.h2`
   @media screen and (max-width: 768px) {
     font-size: 30px;
   }
+  @media screen and (max-width: 480px) {
+    font-size: 25px;
+  }
 `;
 
 export const Content = styled.div`
   padding-left: 20px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: #808080;
-  @media screen and (max-width: 480px) {
-    font-size: 12px;
-  }
-`;
-
-export const Tag = styled.div`
-  font-size: 24px;
-  margin-bottom: 1rem;
+  font-size: 18px;
   @media screen and (max-width: 1280px) {
     font-size: 18px;
   }
   @media screen and (max-width: 768px) {
     font-size: 16px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
+`;
+
+export const Tag = styled.div`
+  margin-bottom: 1rem;
+  font-size: 25px;
+  @media screen and (max-width: 1280px) {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
   }
 `;

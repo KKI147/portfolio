@@ -14,19 +14,19 @@ function About() {
         <Title>About</Title>
         <div>
           <Tag>• Name</Tag>
-          <Content>Kim kyeong il</Content>
+          <Content>- Kim kyeong il</Content>
         </div>
         <div>
           <Tag>• Role</Tag>
-          <Content>Fe(Front-End Developer)</Content>
+          <Content>- Fe(Front-End Developer)</Content>
         </div>
         <div>
           <Tag>• Birthday</Tag>
-          <Content>1991. 10. 24</Content>
+          <Content>- 1991. 10. 24</Content>
         </div>
         <div>
           <Tag>• Email</Tag>
-          <Content>rla123dlf@gmail.com</Content>
+          <Content>- rla123dlf@gmail.com</Content>
         </div>
         <div>
           <Tag>• Education</Tag>

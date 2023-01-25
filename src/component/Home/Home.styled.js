@@ -1,5 +1,4 @@
 import styled from "styled-components";
-//1280px, 768px, 480px
 
 export const Section = styled.section`
   width: 100%;
@@ -28,17 +27,47 @@ export const Title = styled.div`
   @media screen and (max-width: 1280px) {
     font-size: 2rem;
   }
-
   @media screen and (max-width: 768px) {
-    left: 20%;
-    top: 40%;
+    top: 50%;
+    left: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    word-break: keep-all;
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 768px) {
+    top: 50%;
+    left: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    word-break: keep-all;
     font-size: 1.5rem;
   }
   @media screen and (max-width: 480px) {
-    left: 10%;
+    top: 50%;
+    left: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    word-break: keep-all;
+    font-size: 1.3rem;
+  }
+
+  /* @media screen and (max-width: 768px) {
+    left: 25%;
+    right: 15%;
     top: 40%;
     font-size: 1.5rem;
   }
+  @media screen and (max-width: 480px) { */
+  /* left: 20%;
+    right: 10%; */
+  /* left: 10%; */
+  /* right: 10%; */
+  /* left: 20%;
+    top: 38%;
+    font-size: 1.2rem;
+    word-break: break-all;
+  } */
 `;
 
 export const SubTitle = styled.div(
@@ -48,22 +77,20 @@ export const SubTitle = styled.div(
     color: "#888888",
     fontSize: "1.3rem",
     "@media screen and (max-width: 1280px)": {
-      right: "10%",
-      wordBreak: "keep-all",
-
       fontSize: "1rem",
     },
     "@media screen and (max-width: 768px)": {
+      top: "50%",
+      left: "10%",
       right: "5%",
-      left: "5%",
-      top: "45%",
       wordBreak: "keep-all",
+      fontSize: "1rem",
     },
     "@media screen and (max-width: 480px)": {
-      right: "5%",
-      left: "5%",
-      top: "50%",
+      left: "15%",
+      top: "48%",
       wordBreak: "keep-all",
+      fontSize: "1.1rem",
     },
   },
 
@@ -89,6 +116,8 @@ export const ImgComponent = styled.img`
     bottom: 5%;
     right: 5%;
     left: 5%;
+    width: 80px;
+    height: 80px;
   }
 
   @media screen and (max-width: 768px) {
@@ -97,6 +126,8 @@ export const ImgComponent = styled.img`
     position: fixed;
     margin: 2px auto;
     bottom: 5%;
+    width: 80px;
+    height: 80px;
   }
   @media screen and (max-width: 480px) {
     right: 5%;
@@ -104,5 +135,7 @@ export const ImgComponent = styled.img`
     position: fixed;
     margin: 2px auto;
     bottom: 5%;
+    width: 80px;
+    height: 80px;
   }
 `;

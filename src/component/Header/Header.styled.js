@@ -1,43 +1,46 @@
 import styled from "styled-components";
-//1280px, 768px, 480px
 
 const Header = styled.header`
   display: flex;
   width: 100%;
   height: 64px;
   background-color: #212121;
-  color: #ffffff;
+  color: #fff;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   position: fixed;
-  gap: 100px;
   z-index: 2;
 
   & div {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 25px;
+    padding: 0px 50px;
   }
   & div:hover {
     color: #cbc3e3;
   }
 
   @media screen and (max-width: 1280px) {
-    height: 58px;
+    height: 70px;
     & div {
-      font-size: 1.5rem;
+      font-size: 20px;
+      padding: 0px 30px;
     }
   }
   @media screen and (max-width: 768px) {
-    gap: 50px;
-    height: 48px;
+    height: 70px;
     & div {
-      font-size: 1rem;
+      font-size: 18px;
+      padding: 0px 30px;
     }
   }
 
   @media screen and (max-width: 480px) {
-    gap: 20px;
-    height: 38px;
+    height: 70px;
+    & div {
+      font-size: 16px;
+      padding: 0px 20px;
+    }
   }
 `;
 
