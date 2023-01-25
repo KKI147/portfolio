@@ -8,18 +8,19 @@ export const FooterComponent = styled.footer`
   color: #181818;
   bottom: 0%;
   position: absolute;
-  & span {
+  & div {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 100px;
-    padding: 24px;
+    padding: 20px;
     @media screen and (max-width: 1280px) {
       gap: 50px;
     }
 
     @media screen and (max-width: 768px) {
       gap: 20px;
-      font-size: 12px;
+      font-size: 16px;
     }
     @media screen and (max-width: 480px) {
       gap: 10px;
@@ -28,10 +29,6 @@ export const FooterComponent = styled.footer`
   }
   & a {
     color: #ffffff;
-  }
-  & div {
-    display: flex;
-    align-items: center;
   }
 `;
 

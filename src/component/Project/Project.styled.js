@@ -2,50 +2,52 @@ import styled from "styled-components";
 //1280px, 768px, 480px
 
 export const Section = styled.section`
-  display: flex;
   width: 100%;
   height: 100vh;
   background-color: #f5f5f5;
 `;
 
 export const Wrapper = styled.div`
-  margin: 64px 360px 0 360px;
-  @media screen and (max-width: 1700px) {
-    margin: 64px 64px;
+  padding-top: 100px;
+  margin: 0 20% 0 20%;
+  /* @media screen and (max-width: 1280px) {
+    padding-top: 100px;
+    margin: 0 10% 0 15%;
   }
-  @media screen and (max-width: 1280px) {
-    margin: 64px 64px;
+  @media screen and (max-width: 768px) {
+    padding-top: 100px;
+    margin: 0 5% 0 10%;
   }
-  @media screen and (max-width: 900px) {
-    margin: 64px 0 0 30px;
-  }
+  @media screen and (max-width: 480px) {
+    padding-top: 100px;
+    margin: 0 5% 0 10%;
+  } */
 `;
 
 export const Title = styled.h2`
   margin-bottom: 5rem;
   font-size: 50px;
-  @media screen and (max-width: 1280px) {
+  /* @media screen and (max-width: 1280px) {
     font-size: 40px;
   }
   @media screen and (max-width: 768px) {
     font-size: 30px;
-  }
+  } */
 `;
 
 export const ImgBox = styled.div`
-  display: flex;
-  margin-bottom: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 100px;
-  height: 300px;
-  @media screen and (max-width: 1700px) {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  /* z-index: 55; */
+  /* @media screen and (max-width: 1700px) {
     margin: 0px 120px;
-    gap: 100px;
+    gap: 30px;
   }
   @media screen and (max-width: 1280px) {
     margin: 0px 120px;
-    gap: 50px;
+    gap: 30px;
   }
   @media screen and (max-width: 768px) {
     margin: 0px 120px;
@@ -54,26 +56,26 @@ export const ImgBox = styled.div`
   @media screen and (max-width: 480px) {
     margin: 0px 120px;
     gap: 50px;
-  }
+  } */
 `;
 
-export const HoverBox = styled.span`
+export const HoverBox = styled.div`
   cursor: pointer;
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease;
   &:hover {
     transform: translateY(-1.5rem);
-  }
+  } */
 `;
 export const ImgComponent = styled.img`
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   border-radius: 12px;
   box-shadow: 5px 5px 5px 5px #d3d3d3;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  @media screen and (max-width: 1700px) {
+  /* @media screen and (max-width: 1700px) {
     width: 300px;
     height: 200px;
   }
@@ -88,14 +90,14 @@ export const ImgComponent = styled.img`
   @media screen and (max-width: 900px) {
     width: 150px;
     height: 100px;
-  }
+  } */
 `;
 
 export const Hover = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   border-radius: 12px;
   z-index: 1;
   & div {
@@ -108,7 +110,7 @@ export const Hover = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    @media screen and (max-width: 1800px) {
+    /* @media screen and (max-width: 1800px) {
       font-size: 20px;
     }
     @media screen and (max-width: 1500px) {
@@ -119,10 +121,10 @@ export const Hover = styled.div`
     }
     @media screen and (max-width: 900px) {
       font-size: 12px;
-    }
+    } */
   }
 
-  @media screen and (max-width: 1800px) {
+  /* @media screen and (max-width: 1800px) {
     width: 300px;
     height: 200px;
   }
@@ -137,7 +139,7 @@ export const Hover = styled.div`
   @media screen and (max-width: 900px) {
     width: 150px;
     height: 100px;
-  }
+  } */
 `;
 
 export const ModalBox = styled.div`

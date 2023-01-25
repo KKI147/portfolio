@@ -17,7 +17,7 @@ function Footer() {
 
   return (
     <FooterComponent>
-      <span>
+      <div>
         <ImgComponent
           onClick={git}
           src={process.env.PUBLIC_URL + "/icon/github.svg"}
@@ -31,7 +31,7 @@ function Footer() {
           src={process.env.PUBLIC_URL + "/icon/velog.svg"}
         />
         <div>© Copyright 2023. Made by Kim kyeong il</div>
-      </span>
+      </div>
     </FooterComponent>
   );
 }

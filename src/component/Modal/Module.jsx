@@ -198,7 +198,7 @@ export const Portfolio = ({ setIsOpen }) => {
 
       <SubTitle>Tec</SubTitle>
       <Text>
-        <div>- React-swiper을 활용한 스크롤 구현</div>
+        <div>- React-swiper를 활용한 스크롤 구현</div>
         <div>- useState를 통한 modal창 개발</div>
       </Text>
     </>

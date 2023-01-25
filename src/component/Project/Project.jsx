@@ -10,6 +10,7 @@ import {
 } from "../Project/Project.styled";
 import Modal from "../Modal/Modal";
 import Footer from "../Footer/Footer";
+import Slider from "../Slider/Slider";
 
 import { Vongole, Velog, Velly, Todo, Portfolio } from "../Modal/Module";
 
@@ -26,7 +27,8 @@ function Project() {
     <Section>
       <Wrapper>
         <Title>Project</Title>
-        <ImgBox>
+        <Slider modalOpen={modalOpen} />
+        {/* <ImgBox>
           <HoverBox onClick={() => modalOpen("vongole")}>
             <ImgComponent src={process.env.PUBLIC_URL + "/img/vongole.PNG"} />
             <Hover>
@@ -57,7 +59,7 @@ function Project() {
               <div>Portfolio</div>
             </Hover>
           </HoverBox>
-        </ImgBox>
+        </ImgBox> */}
       </Wrapper>
       <Footer />
 
