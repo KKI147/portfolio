@@ -77,7 +77,7 @@ function Skill() {
           <img src={process.env.PUBLIC_URL + "/icon/axios.svg"} alt="html" />
           <div>
             <div>
-              - Axios를 이용하여 서버과 비동기 HTTP통신을 할수 있습니다.
+              - Axios를 이용하여 서버와 비동기 HTTP통신을 할수 있습니다.
             </div>
             <div>
               - Error, Success, Complete의 상태를 통해 실행 흐름을 조절할수

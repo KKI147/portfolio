@@ -32,7 +32,7 @@ function About() {
           <Tag>• Education</Tag>
           <Content>
             <EducationList>
-              <div>- 2010. 03 ~ 2016. 02 건국대학교(글로컬) 경영학과 입학</div>
+              <div>- 2010. 03 ~ 2016. 03 건국대학교(글로컬) 경영학과 입학</div>
               <div>- 2011. ~ 2012. 해군병장 만기 전역</div>
               <div>- 2010. 03 ~ 2016. 02 졸업</div>
               <div>- 2022. 09 스파르타코딩클럽 항해99 9기 참가</div>

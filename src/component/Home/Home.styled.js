@@ -7,6 +7,24 @@ export const Section = styled.section`
   position: relative;
 `;
 
+export const Wrapper = styled.div`
+  @media screen and (max-width: 1280px) {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 10%);
+    text-align: center;
+    word-break: keep-all;
+  }
+  @media screen and (max-width: 768px) {
+    word-break: break-all;
+  }
+  @media screen and (max-width: 480px) {
+    word-break: break-all;
+  }
+`;
+
 export const Title = styled.div`
   position: absolute;
   right: 10%;
@@ -25,49 +43,18 @@ export const Title = styled.div`
     }
   }
   @media screen and (max-width: 1280px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    position: static;
+    line-height: 50px;
   }
   @media screen and (max-width: 768px) {
-    top: 50%;
-    left: 50%;
-    right: 0%;
-    transform: translate(-50%, -50%);
-    word-break: keep-all;
     font-size: 1.5rem;
-  }
-  @media screen and (max-width: 768px) {
-    top: 50%;
-    left: 50%;
-    right: 0%;
-    transform: translate(-50%, -50%);
-    word-break: keep-all;
-    font-size: 1.5rem;
+    line-height: 48px;
   }
   @media screen and (max-width: 480px) {
-    top: 50%;
-    left: 50%;
-    right: 0%;
-    transform: translate(-50%, -50%);
-    word-break: keep-all;
     font-size: 1.3rem;
+    line-height: 46px;
   }
-
-  /* @media screen and (max-width: 768px) {
-    left: 25%;
-    right: 15%;
-    top: 40%;
-    font-size: 1.5rem;
-  }
-  @media screen and (max-width: 480px) { */
-  /* left: 20%;
-    right: 10%; */
-  /* left: 10%; */
-  /* right: 10%; */
-  /* left: 20%;
-    top: 38%;
-    font-size: 1.2rem;
-    word-break: break-all;
-  } */
 `;
 
 export const SubTitle = styled.div(
@@ -77,20 +64,18 @@ export const SubTitle = styled.div(
     color: "#888888",
     fontSize: "1.3rem",
     "@media screen and (max-width: 1280px)": {
-      fontSize: "1rem",
+      fontSize: "1.2rem",
+      position: "static",
+      padding: "0 5%",
+      lineHeight: "22px",
     },
     "@media screen and (max-width: 768px)": {
-      top: "50%",
-      left: "10%",
-      right: "5%",
-      wordBreak: "keep-all",
-      fontSize: "1rem",
+      fontSize: "1.1rem",
+      lineHeight: "20px",
     },
     "@media screen and (max-width: 480px)": {
-      left: "15%",
-      top: "48%",
-      wordBreak: "keep-all",
-      fontSize: "1.1rem",
+      fontSize: "1rem",
+      lineHeight: "18px",
     },
   },
 
