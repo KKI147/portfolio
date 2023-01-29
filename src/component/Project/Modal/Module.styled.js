@@ -35,6 +35,10 @@ export const ModalHead = styled.div`
 `;
 
 export const ModalTitle = styled.div`
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  gap: 24px;
   font-size: 24px;
   font-weight: bold;
   @media screen and (max-width: 1280px) {
@@ -45,6 +49,20 @@ export const ModalTitle = styled.div`
   }
   @media screen and (max-width: 480px) {
     font-size: 18px;
+  }
+`;
+
+export const Date = styled.div`
+  color: #808080;
+  font-size: 18px;
+  @media screen and (max-width: 1280px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
   }
 `;
 

@@ -7,16 +7,16 @@ export const Section = styled.section`
 `;
 
 export const Wrapper = styled.div`
-  padding: 74px 20%;
+  padding: 50px 20%;
 
   @media screen and (max-width: 1280px) {
-    padding: 68px 15%;
+    padding: 48px 15%;
   }
   @media screen and (max-width: 768px) {
-    padding: 64px 10%;
+    padding: 46px 10%;
   }
   @media screen and (max-width: 480px) {
-    padding: 56px 8%;
+    padding: 44px 8%;
   }
 `;
 
@@ -37,18 +37,19 @@ export const Title = styled.h2`
 export const Box = styled.div`
   display: flex;
   align-items: center;
-  margin: 1.5rem auto;
+  margin: 20px auto;
   & div {
-    font-size: 20px;
+    font-size: 18px;
     word-break: keep-all;
-    padding: 5px 20px;
+    padding: 4px 20px;
     color: #808080;
   }
   @media screen and (max-width: 1280px) {
-    margin: 15px auto;
+    margin: 18px auto;
     & div {
-      font-size: 18px;
+      font-size: 16px;
       word-break: keep-all;
+      padding: 3px 16px;
     }
     & img {
       width: 50px;
@@ -56,25 +57,27 @@ export const Box = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
-    margin: 15px auto;
+    margin: 16px auto;
     & div {
-      padding: 5px 10px;
-      font-size: 16px;
+      font-size: 14px;
+      word-break: keep-all;
+      padding: 2px 16px;
     }
     & img {
-      width: 50px;
-      height: 50px;
+      width: 45px;
+      height: 45px;
     }
   }
   @media screen and (max-width: 480px) {
-    margin: 15px auto;
+    margin: 14px auto;
     & div {
-      padding: 5px 10px;
-      font-size: 14px;
+      font-size: 12px;
+      word-break: keep-all;
+      padding: 2px 14px;
     }
     & img {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
     }
   }
 `;

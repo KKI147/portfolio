@@ -7,13 +7,17 @@ import {
   ModalTitle,
   ModalBtn,
   ModalHead,
+  Date,
 } from "./Module.styled";
 
 export const Vongole = ({ setIsOpen }) => {
   return (
     <>
       <ModalHead>
-        <ModalTitle>Vongole</ModalTitle>
+        <ModalTitle>
+          <div>Vongole</div>
+          <Date>DATE : 2022. 11 ~ 12(6주)</Date>
+        </ModalTitle>
         <ModalBtn onClick={() => setIsOpen(false)}>X</ModalBtn>
       </ModalHead>
       <Box>
@@ -59,7 +63,9 @@ export const Velog = ({ setIsOpen }) => {
   return (
     <>
       <ModalHead>
-        <ModalTitle>Velog</ModalTitle>
+        <ModalTitle>
+          <div>Velog</div> <Date>DATE : 2022. 11(1주)</Date>
+        </ModalTitle>
         <ModalBtn onClick={() => setIsOpen(false)}>X</ModalBtn>
       </ModalHead>
       <Box>
@@ -81,7 +87,7 @@ export const Velog = ({ setIsOpen }) => {
       </Box>
       <Box>
         <SubTitle>Description</SubTitle>
-        <Text>- 벨로그 클론코딩</Text>
+        <Text>- Velog 클론코딩</Text>
       </Box>
 
       <SubTitle>Tec</SubTitle>
@@ -99,7 +105,9 @@ export const Velly = ({ setIsOpen }) => {
   return (
     <>
       <ModalHead>
-        <ModalTitle>Vall of race</ModalTitle>
+        <ModalTitle>
+          <div>Vall of race</div> <Date>DATE : 2022. 11(1주)</Date>
+        </ModalTitle>
         <ModalBtn onClick={() => setIsOpen(false)}>X</ModalBtn>
       </ModalHead>
       <Box>
@@ -121,12 +129,12 @@ export const Velly = ({ setIsOpen }) => {
       </Box>
       <Box>
         <SubTitle>Description</SubTitle>
-        <Text>- 배민을 오마주한 음식주문 서비스</Text>
+        <Text>- 배달의민족을 오마주한 음식주문 서비스</Text>
       </Box>
 
       <SubTitle>Tec</SubTitle>
       <Text>
-        <div>- Boolean을 활용 회원가입 Type 구분</div>
+        <div>- 회원가입시 유형에 따른 서비스 페이지 로직 분기</div>
         <div>- Jwt Token을 통한 회원가입 구현 개발</div>
         <div>- 정규식 표현을 통한 로그인 유효성 검사 기능</div>
         <div>- Axios를 통한 게시글 CRD 구현</div>
@@ -139,7 +147,10 @@ export const Todo = ({ setIsOpen }) => {
   return (
     <>
       <ModalHead>
-        <ModalTitle>My todo</ModalTitle>
+        <ModalTitle>
+          <div>My todo</div>
+          <Date>DATE : 2022. 10(1주)</Date>
+        </ModalTitle>
         <ModalBtn onClick={() => setIsOpen(false)}>X</ModalBtn>
       </ModalHead>
       <Box>
@@ -173,7 +184,10 @@ export const Portfolio = ({ setIsOpen }) => {
   return (
     <>
       <ModalHead>
-        <ModalTitle>Portfolio</ModalTitle>
+        <ModalTitle>
+          <div>Portfolio</div>
+          <Date>DATE : 2023. 01(4주)</Date>
+        </ModalTitle>
         <ModalBtn onClick={() => setIsOpen(false)}>X</ModalBtn>
       </ModalHead>
       <Box>
@@ -199,7 +213,7 @@ export const Portfolio = ({ setIsOpen }) => {
       <SubTitle>Tec</SubTitle>
       <Text>
         <div>- React-swiper를 활용한 스크롤 구현</div>
-        <div>- useState를 통한 modal창 개발</div>
+        <div>- React-Portal을 통한 modal창 구현</div>
         <div>- React-slider를 통한 carousel 구현</div>
       </Text>
     </>

@@ -49,7 +49,6 @@ export const Todo = styled.div`
   height: 30rem;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   background-image: url("../../../img/todo.PNG");
   @media screen and (max-width: 1280px) {
     width: 100% !important;
@@ -135,7 +134,7 @@ export const StyledSlider = styled(Slider)`
     left: 0%;
     text-align: right;
     width: 44%;
-    top: 110.5%;
+    top: 105.5%;
     margin-right: 6.5%;
   }
   .slick-prev::before {
@@ -149,7 +148,7 @@ export const StyledSlider = styled(Slider)`
     right: 0%;
     text-align: left;
     width: 50.5%;
-    top: 110.5%;
+    top: 105.5%;
   }
   .slick-next::before {
     position: absolute;

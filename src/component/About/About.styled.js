@@ -7,21 +7,21 @@ export const Section = styled.section`
 `;
 
 export const Wrapper = styled.div`
-  padding: 74px 20%;
+  padding: 50px 20%;
 
   @media screen and (max-width: 1280px) {
-    padding: 68px 15%;
+    padding: 48px 15%;
   }
   @media screen and (max-width: 768px) {
-    padding: 64px 10%;
+    padding: 46px 10%;
   }
   @media screen and (max-width: 480px) {
-    padding: 56px 8%;
+    padding: 44px 8%;
   }
 `;
 
 export const Title = styled.h2`
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 48px;
   @media screen and (max-width: 1280px) {
     font-size: 46px;
@@ -36,7 +36,7 @@ export const Title = styled.h2`
 
 export const Content = styled.div`
   padding-left: 20px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: #808080;
   font-size: 20px;
   @media screen and (max-width: 1280px) {
@@ -51,7 +51,7 @@ export const Content = styled.div`
 `;
 
 export const Tag = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 25px;
   @media screen and (max-width: 1280px) {
     font-size: 24px;
