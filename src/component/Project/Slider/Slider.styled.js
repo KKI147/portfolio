@@ -1,18 +1,75 @@
 import styled from "styled-components";
-//1280px, 768px, 480px
 import Slider from "react-slick";
 
-export const ImgComponent = styled.img`
-  width: 30rem;
+export const Vongole = styled.div`
+  width: 30rem !important;
   height: 30rem;
-  border-radius: 12px;
-  box-shadow: 5px 0 5px 0 #d3d3d3;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
+  background-image: url("../../../img/vongole.PNG");
   @media screen and (max-width: 1280px) {
-    width: 100%;
+    width: 100% !important;
+    height: 450px;
+  }
+`;
+
+export const Velog = styled.div`
+  width: 30rem !important;
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../../img/velog.PNG");
+  @media screen and (max-width: 1280px) {
+    width: 100% !important;
+    height: 450px;
+  }
+`;
+
+export const Velly = styled.div`
+  width: 30rem !important;
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../../img/velly.PNG");
+  @media screen and (max-width: 1280px) {
+    width: 100% !important;
+    height: 450px;
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 480px) {
+  }
+`;
+
+export const Todo = styled.div`
+  width: 30rem !important;
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../../img/todo.PNG");
+  @media screen and (max-width: 1280px) {
+    width: 100% !important;
+    height: 450px;
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 480px) {
+  }
+`;
+
+export const Pote = styled.div`
+  width: 30rem !important;
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../../img/pote.PNG");
+  @media screen and (max-width: 1280px) {
+    width: 100% !important;
     height: 450px;
   }
   @media screen and (max-width: 768px) {
@@ -56,35 +113,29 @@ export const Title = styled.div`
   &:hover {
     transform: translate(-50%, -40px);
   }
-  font-size: 20px;
+  font-size: 28px;
   @media screen and (max-width: 1280px) {
-    font-size: 18px;
+    font-size: 26px;
   }
   @media screen and (max-width: 768px) {
-    font-size: 16px;
+    font-size: 24px;
   }
   @media screen and (max-width: 480px) {
-    font-size: 14px;
+    font-size: 22px;
   }
 `;
 
 export const StyledSlider = styled(Slider)`
-  /* 전체 */
   width: 65rem;
-
   @media screen and (max-width: 1280px) {
     width: 100%;
-  }
-
-  /* slide 하나*/
-  .slick-list {
   }
 
   .slick-prev {
     left: 0%;
     text-align: right;
     width: 44%;
-    top: 105.5%;
+    top: 110.5%;
     margin-right: 6.5%;
   }
   .slick-prev::before {
@@ -98,7 +149,7 @@ export const StyledSlider = styled(Slider)`
     right: 0%;
     text-align: left;
     width: 50.5%;
-    top: 105.5%;
+    top: 110.5%;
   }
   .slick-next::before {
     position: absolute;

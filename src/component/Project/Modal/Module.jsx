@@ -200,6 +200,7 @@ export const Portfolio = ({ setIsOpen }) => {
       <Text>
         <div>- React-swiper를 활용한 스크롤 구현</div>
         <div>- useState를 통한 modal창 개발</div>
+        <div>- React-slider를 통한 carousel 구현</div>
       </Text>
     </>
   );

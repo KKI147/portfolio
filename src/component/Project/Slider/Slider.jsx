@@ -1,7 +1,16 @@
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { StyledSlider, ImgComponent, Hover, Title } from "./Slider.styled";
+import {
+  StyledSlider,
+  Hover,
+  Title,
+  Vongole,
+  Velog,
+  Velly,
+  Todo,
+  Pote,
+} from "./Slider.styled";
 
 export default function Responsive({ modalOpen }) {
   const settings = {
@@ -39,36 +48,31 @@ export default function Responsive({ modalOpen }) {
   return (
     <div>
       <StyledSlider {...settings}>
-        <div>
-          <ImgComponent src={process.env.PUBLIC_URL + "/img/vongole.PNG"} />
+        <Vongole>
           <Hover>
             <Title onClick={() => modalOpen("vongole")}>Vongole</Title>
           </Hover>
-        </div>
-        <div>
-          <ImgComponent src={process.env.PUBLIC_URL + "/img/velog.PNG"} />
+        </Vongole>
+        <Velog>
           <Hover>
             <Title onClick={() => modalOpen("velog")}>Velog</Title>
           </Hover>
-        </div>
-        <div>
-          <ImgComponent src={process.env.PUBLIC_URL + "/img/velly.PNG"} />
+        </Velog>
+        <Velly>
           <Hover>
             <Title onClick={() => modalOpen("velly")}>Vall of race</Title>
           </Hover>
-        </div>
-        <div>
-          <ImgComponent src={process.env.PUBLIC_URL + "/img/todo.PNG"} />
+        </Velly>
+        <Todo>
           <Hover>
             <Title onClick={() => modalOpen("todo")}>My todo</Title>
           </Hover>
-        </div>
-        <div>
-          <ImgComponent src={process.env.PUBLIC_URL + "/img/pote.PNG"} />
+        </Todo>
+        <Pote>
           <Hover>
             <Title onClick={() => modalOpen("portfolio")}>Portfolio</Title>
           </Hover>
-        </div>
+        </Pote>
       </StyledSlider>
     </div>
   );

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-//1280px, 768px, 480px
 
 export const Section = styled.section`
   width: 100%;
@@ -8,13 +7,13 @@ export const Section = styled.section`
 `;
 
 export const Wrapper = styled.div`
-  padding: 100px 20%;
+  padding: 74px 20%;
 
   @media screen and (max-width: 1280px) {
-    padding: 76px 15%;
+    padding: 68px 15%;
   }
   @media screen and (max-width: 768px) {
-    padding: 66px 10%;
+    padding: 64px 10%;
   }
   @media screen and (max-width: 480px) {
     padding: 56px 8%;
