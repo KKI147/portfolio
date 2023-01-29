@@ -1,79 +1,75 @@
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {
-  StyledSlider,
-  HoverBox,
-  ImgComponent,
-  Hover,
-  ImgBox,
-} from "./Slider.styled";
+import { StyledSlider, ImgComponent, Hover, Title } from "./Slider.styled";
 
-export default function SimpleSlider({ modalOpen }) {
+export default function Responsive({ modalOpen }) {
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 1000,
     slidesToShow: 2,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
+    initialSlide: 0,
     arrows: true,
-
-    // responsive: [
-    //   // 반응형 웹 구현 옵션
-    //   {
-    //     breakpoint: 960, //화면 사이즈 960px
-    //     settings: {
-    //       //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-    //       slidesToShow: 3,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 768, //화면 사이즈 768px
-    //     settings: {
-    //       //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-    //       slidesToShow: 2,
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
-    <>
+    <div>
       <StyledSlider {...settings}>
-        <ImgBox>
-          <HoverBox>
-            <ImgComponent src={process.env.PUBLIC_URL + "/img/vongole.PNG"} />
-            <Hover>
-              <div onClick={() => modalOpen("vongole")}>Vongole</div>
-            </Hover>
-          </HoverBox>
-        </ImgBox>
-        <ImgBox>
-          <HoverBox>
-            <ImgComponent src={process.env.PUBLIC_URL + "/img/velog.PNG"} />
-            <Hover>
-              <div onClick={() => modalOpen("velog")}>Velog</div>
-            </Hover>
-          </HoverBox>
-        </ImgBox>
-        <HoverBox>
+        <div>
+          <ImgComponent src={process.env.PUBLIC_URL + "/img/vongole.PNG"} />
+          <Hover>
+            <Title onClick={() => modalOpen("vongole")}>Vongole</Title>
+          </Hover>
+        </div>
+        <div>
+          <ImgComponent src={process.env.PUBLIC_URL + "/img/velog.PNG"} />
+          <Hover>
+            <Title onClick={() => modalOpen("velog")}>Velog</Title>
+          </Hover>
+        </div>
+        <div>
           <ImgComponent src={process.env.PUBLIC_URL + "/img/velly.PNG"} />
           <Hover>
-            <div onClick={() => modalOpen("velly")}>Vall of race</div>
+            <Title onClick={() => modalOpen("velly")}>Vall of race</Title>
           </Hover>
-        </HoverBox>
-        <HoverBox>
+        </div>
+        <div>
           <ImgComponent src={process.env.PUBLIC_URL + "/img/todo.PNG"} />
           <Hover>
-            <div onClick={() => modalOpen("todo")}>My todo</div>
+            <Title onClick={() => modalOpen("todo")}>My todo</Title>
           </Hover>
-        </HoverBox>
-        <HoverBox>
+        </div>
+        <div>
           <ImgComponent src={process.env.PUBLIC_URL + "/img/pote.PNG"} />
           <Hover>
-            <div onClick={() => modalOpen("portfolio")}>Portfolio</div>
+            <Title onClick={() => modalOpen("portfolio")}>Portfolio</Title>
           </Hover>
-        </HoverBox>
+        </div>
       </StyledSlider>
-    </>
+    </div>
   );
 }

@@ -9,11 +9,11 @@ export const FooterComponent = styled.footer`
   bottom: 0%;
   position: absolute;
   & div {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
-    padding: 20px;
     @media screen and (max-width: 1280px) {
       gap: 50px;
     }

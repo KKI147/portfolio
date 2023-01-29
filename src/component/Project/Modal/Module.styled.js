@@ -22,8 +22,9 @@ export const Content = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   @media screen and (max-width: 1280px) {
-    width: 900px;
-    padding: 12px 24px;
+    width: 80%;
+    height: fit-content;
+    padding: 20px 32px;
   }
 `;
 
@@ -36,27 +37,66 @@ export const ModalHead = styled.div`
 export const ModalTitle = styled.div`
   font-size: 24px;
   font-weight: bold;
+  @media screen and (max-width: 1280px) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 export const ModalBtn = styled.div`
   font-size: 24px;
   cursor: pointer;
+  @media screen and (max-width: 1280px) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 export const Box = styled.div`
   align-items: center;
   margin: 30px 0px;
   line-height: 30px;
+  @media screen and (max-width: 1280px) {
+    margin: 25px 0px;
+    line-height: 30px;
+  }
+  @media screen and (max-width: 768px) {
+    line-height: 28px;
+  }
+  @media screen and (max-width: 480px) {
+    line-height: 26px;
+  }
 `;
 
 export const SubTitle = styled.div`
   font-size: 24px;
   margin: 10px 0px;
   font-weight: bold;
+  @media screen and (max-width: 1280px) {
+    font-size: 22px;
+    margin: 8px 0px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 export const StackBox = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 export const Stack = styled.div`
@@ -64,10 +104,35 @@ export const Stack = styled.div`
   background-color: #d3d3d3;
   padding: 2px 16px;
   margin: 5px 5px;
+  font-size: 18px;
+
+  @media screen and (max-width: 1280px) {
+    font-size: 16px;
+    padding: 2px 14px;
+    margin: 4px 4px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
 `;
 export const Text = styled.div`
   color: #808080;
   & div {
     line-height: 30px;
+  }
+  @media screen and (max-width: 1280px) {
+    line-height: 28px;
+    word-break: keep-all;
+  }
+  @media screen and (max-width: 768px) {
+    line-height: 26px;
+    word-break: keep-all;
+  }
+  @media screen and (max-width: 480px) {
+    line-height: 24px;
+    word-break: keep-all;
   }
 `;

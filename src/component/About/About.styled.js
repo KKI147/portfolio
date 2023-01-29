@@ -8,17 +8,16 @@ export const Section = styled.section`
 `;
 
 export const Wrapper = styled.div`
-  /* width: calc(100% - 40%); */
   padding: 100px 20%;
 
   @media screen and (max-width: 1280px) {
-    padding: 100px 15%;
+    padding: 76px 15%;
   }
   @media screen and (max-width: 768px) {
-    padding: 100px 10%;
+    padding: 66px 10%;
   }
   @media screen and (max-width: 480px) {
-    padding: 100px 8%;
+    padding: 56px 8%;
   }
 `;
 

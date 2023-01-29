@@ -9,11 +9,29 @@ export const Section = styled.section`
 
 export const Wrapper = styled.div`
   padding: 100px 20%;
+  @media screen and (max-width: 1280px) {
+    padding: 76px 15%;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 66px 10%;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 56px 8%;
+  }
 `;
 
 export const Title = styled.h2`
   margin-bottom: 5rem;
-  font-size: 50px;
+  font-size: 48px;
+  @media screen and (max-width: 1280px) {
+    font-size: 46px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 44px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 42px;
+  }
 `;
 
 export const ModalBox = styled.div`
