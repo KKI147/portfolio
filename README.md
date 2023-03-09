@@ -2,8 +2,6 @@
 
 ## _Portfolio_
 
-### 🔗[페이지 이동하기](https://portfolio-beta-blond-28.vercel.app/)
-
 ### **🛠️ Stacks**
 
 <div>
